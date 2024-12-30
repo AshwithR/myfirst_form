@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <style>
+        
+        .form-container {
+            background-color: #edcbcb;
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            border-color: #ac9f9f;
+          
+
+         
+            
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #00796b;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-group label {
+            margin-right: 10px;
+            color: #00796b;
+            flex-basis: 40%;
+            text-align: ce;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex-basis: 55%;
+            padding: 10px;
+            box-sizing: content-box;
+            border: 1px solid #b2dfdb;
+            border-radius: 4px;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+            flex-basis: auto;
+        }
+        .form-group .radio-group {
+            display: flex;
+            justify-content: space-between;
+            width: 55%;
+        }
+        .form-group .radio-group label {
+            margin-right: 10px;
+            flex-basis: auto;
+        }
+        .form-group button {
+            width: 40%;
+            padding: 10px;
+            background-color: #00796b;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #004d40;
+        }
+        .form-group:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+header {
+            background-color: #cfc0c0; /* Dark background */
+            color: white; /* White text */
+            padding: 10px;
+            border-radius: 1%;
+            box-shadow: #00796b;
+            bo
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #790c464a; /* Green background */
+            color: white; /* White text */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00796b;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: rgb(46, 56, 47);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ecec11; /* Gold color on hover */
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .search-bar button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049; /* Lighter green */
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background-color: #FFD700; /* Gold color */
+            color: #4CAF50;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+
+        title{
+            background-color: #b2dfdb;
+
+        }
+
+    </style>
+</head>
+<header>
+    <div class="logo">MY FIRST FORM USING HTML/CSS &#128512;</div>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Search Bar -->
+    
+
+    
+    
+</header>
+<body style="background-color: #f4eeee;">
+    
+    <div class="form-container">
+        <h2>Course Registration Form</h2>
+        <form action="/submit" method="post">
+            <!-- Personal Details -->
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" title="Fill it according to ur adhar-card"required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" title="it should have both middel & last name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="tel" id="mobile-number" name="mobile-number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="others" required> Others</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Select Country</label>
+                <select id="country" name="country" required>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="picture">Upload Picture</label>
+                <input type="file" id="picture" name="picture" accept="image/*">
+            </div>
+            
+     </form>
+    </div>
+    <div class="form-container"> 
+
+        <h2>Course Details Form</h2> 
+        <form action="/submit" method="post" > 
+            <!-- Course Selection --> 
+             <div class="form-group"> 
+                <label for="course">Select Course</label> 
+                <select id="course" name="course" required> 
+                    <option value="FULL STATCK JAVA">FULL STATCK JAVA</option> 
+                    <option value="MERN STACK">MERN STACK</option> 
+                    <option value="PYTHON">PYTHON</option> </select> 
+                </div> <!-- Delivery Mode --> <div class="form-group"> 
+                    <label>Delivery Mode</label> 
+                    <div class="radio-group"> 
+                        <label><input type="radio" name="delivery-mode" value="online" required> Online</label> 
+                        <label><input type="radio" name="delivery-mode" value="offline" required> Offline</label> 
+                    </div> </div> <!-- Institute Name --> <div class="form-group"> <label for="institute">Institute Name</label> 
+                        <input type="text" id="institute" name="institute" required> </div>
+                         <!-- Comments --> 
+                          <div class="form-group"> 
+                            <label for="comments">Comments</label> 
+                            <textarea id="comments" name="comments" rows="4"></textarea> 
+                        </div> 
+                        <!-- Submit Button --> 
+                         <div class="form-group"> 
+                            <button type="submit">Submit</button> 
+                        </div> </form>
+</body>
+</html>
